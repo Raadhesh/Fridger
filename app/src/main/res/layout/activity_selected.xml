@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectedActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:text="The Selected Ingredients are as follows"
+        android:textSize="25dp"
+        android:textColor="#00F"
+        android:id="@+id/selectSalutationsTextView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectSalutationsTextView"
+        android:text="Hello User,\nAre these the ingredients you have selected?"
+        android:textColor="#F00"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textViewSelected"
+        android:maxHeight="500dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSelected"
+        android:hint="The String Message is placed here"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:id="@+id/selectTextViewOutput"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_below="@+id/selectTextViewOutput"
+        android:hint="The Positions of the ingredients are shown here"
+        android:layout_marginTop="30dp"
+        android:id="@+id/selectIntTextViewOutput"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectIntTextViewOutput"
+        android:layout_centerHorizontal="true"
+        android:text="Find Recipes"
+        android:id="@+id/selectEndButton"/>
+
+</RelativeLayout>

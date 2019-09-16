@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditRecActivity">
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:id="@+id/editRecName"
+        android:hint="Recipe Name"/>
+    <EditText
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editRecName"
+        android:id="@+id/editRecImageURL"
+        android:inputType="text"
+        android:hint="Recipe Image URL"/>
+    <EditText
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editRecImageURL"
+        android:inputType="text"
+        android:id="@+id/editRecFoodURL"
+        android:hint="Recipe Food URL"/>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editRecFoodURL"
+        android:id="@+id/editRecLikeCount"
+        android:inputType="number"
+        android:hint="Recipe Like Count"/>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/editRecLikeCount"
+        android:id="@+id/editRecIngrdients"
+        android:hint="Ingredient Numbers(use , to seperate vales)"/>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_below="@+id/editRecIngrdients"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="DELETE"
+            android:id="@+id/rec_btnDelete"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SAVE"
+            android:layout_toRightOf="@+id/rec_btnDelete"
+            android:id="@+id/ing_btnSave"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
